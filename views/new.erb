@@ -1,0 +1,14 @@
+<section>
+  <article>
+    <form method='post' action='<%= @row.nil? ? "/new" : "/videos/#{@row['id']}/edit" %>'>
+      <fieldset>
+        <div><label for="title">Title: </label><input type="text" id='title' name='title' value="<%= @row['title'] if @row %>"/></div>
+        <div><label for='url'>URL: </label><input type='text' id='url' name='url' value="<%= @row['url'] if @row %>"/></div>
+        <div><label for='genre'>Genre: </label><input type='text' id='genre' name='genre' value="<%= @row['genre'] if @row %>" /></div>
+        <div><label for ='description'>Description: </label></div>
+        <div><textarea id='description' name='description'><%= @row['description'] if @row %></textarea></div>
+        <div><button>Save!</button></div>
+      </fieldset>
+    </form>
+  </article>
+</section>

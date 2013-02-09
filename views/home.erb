@@ -1,0 +1,18 @@
+<section>
+  <% @rows.each do|row|%>
+  <article>
+    <ul>
+      <li><%= row['title'] %></li>
+      <li><%= row['url'] %></li>
+      <li><%= row['description'] %></li>
+
+    <form method='post' action="/videos/<%= row['id'] %>">
+      <button>Edit</button>
+    </form>
+    <form method='post' action='/videos/<%= row['id']%>/delete'>
+      <button>Delete</button>
+    </form>
+     </ul>
+  </article>
+  <% end %>
+</section>
