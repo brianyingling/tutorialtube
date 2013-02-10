@@ -1,19 +1,24 @@
+
 <!doctype html>
 <html>
 <head>
   <meta charset="utf-8" />
+  <link href='http://fonts.googleapis.com/css?family=Quintessential' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Miss+Fajardose' rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css" />
   <link rel="stylesheet" href="/css/base.css" type="text/css" />
   <link rel="stylesheet" href="/css/style.css" type="text/css" />
+
   <script src="/lib/jquery/jquery-1.9.1.min.js"></script>
   </head>
 <body>
   <div id="container">
-   <div class="row topnav">
+   <div class="row topnav front">
       <div>
         <h1><a href="/">TutorialTube</a></h1>
         <h2>Collecting the Best Tutorials on YouTube</h2>
-          <div class="navbar navbar-inverse">
+          <div class="navbar navbar-inverse tutorialtube-navbar">
             <div class="navbar-inner">
               <ul class="nav">
                 <li><a href="/">Home</a></li>
@@ -28,6 +33,9 @@
     </div>
   <%= yield %>
 
+<footer>
+  Copyright &copy; 2013 TutorialTube.com
+</footer>
 </div>
 </body>
 
