@@ -7,6 +7,12 @@ before do
   @nav_rows = run_sql("select distinct genre from videos")
 end
 
+
+get '/front' do
+  erb :front
+end
+
+
 get '/' do
   sql = "select * from videos"
   @rows = run_sql(sql)
