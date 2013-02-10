@@ -1,0 +1,53 @@
+#container {
+  margin-left: 10px;
+}
+
+nav {
+  vertical-align: middle;
+  margin-bottom: 10px;
+
+}
+
+nav ul {
+  margin-bottom: 0;
+}
+
+nav ul li {
+  display: inline;
+  list-style: none;
+  vertical-align: middle;
+}
+
+article {
+  display: inline-block;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 0 10px 10px 10px;
+
+  -webit-box-shadow: 1px 1px 1px gray;
+  -moz-box-shadow: 1px 1px 1px gray;
+  box-shadow: 2px 2px 2px gray;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+}
+
+article h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+article p {
+  margin-bottom: 0;
+}
+
+
+.form_buttons {
+  display: inline;
+}
+
+.topnav {
+  margin: 0 10px;
+}

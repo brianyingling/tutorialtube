@@ -1,18 +1,18 @@
-<section>
-  <% @rows.each do|row|%>
-  <article>
-    <ul>
-      <li><%= row['title'] %></li>
-      <li><%= row['url'] %></li>
-      <li><%= row['description'] %></li>
-
-    <form method='post' action="/videos/<%= row['id'] %>">
-      <button>Edit</button>
-    </form>
-    <form method='post' action='/videos/<%= row['id']%>/delete'>
-      <button>Delete</button>
-    </form>
-     </ul>
-  </article>
-  <% end %>
-</section>
+    <section>
+      <% @rows.each do|row|%>
+      <article>
+          <h4><%= row['title'] %></h4>
+          <p><%= row['description'] %></p>
+          <iframe width="560" height="315" src="<%= row['url'] %>" frameborder="0" allowfullscreen></iframe>
+          <div>
+          <form class="form_buttons" method='post' action="/videos/<%= row['id'] %>">
+          <button>Edit</button>
+          </form>
+          <form class="form_buttons" method='post' action='/videos/<%= row['id']%>/delete'>
+          <button>Delete</button>
+          </form>
+        </div>
+          </ul>
+      </article>
+      <% end %>
+    </section>
