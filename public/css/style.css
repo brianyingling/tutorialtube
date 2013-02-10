@@ -10,7 +10,12 @@
 
 h1 a {
   color: #000;
-  text-shadow: 2px 2px 2px #fff;
+  text-shadow: 1px 1px 1px #fff;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  text-decoration: none;
 }
 
 nav {
@@ -19,6 +24,15 @@ nav {
 
 }
 
+.logo {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: rgb(180,31,28);
+  padding: 0 2px;
+  color: #fff;
+  text-shadow: 0 0 0;
+  box-shadow: 1px 1px 1px #fff;
+}
 
 nav ul {
   margin-bottom: 0;
@@ -36,6 +50,16 @@ nav ul li {
   border-bottom-left-radius: 5px;
   margin: 10px;
   padding: 10px;
+  background: rgb(201,222,150); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(201,222,150,1) 0%, rgba(138,182,107,1) 44%, rgba(57,130,53,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(201,222,150,1)), color-stop(44%,rgba(138,182,107,1)), color-stop(100%,rgba(57,130,53,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(201,222,150,1) 0%,rgba(138,182,107,1) 44%,rgba(57,130,53,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9de96', endColorstr='#398235',GradientType=0 ); /* IE6-9 */
+  margin-top: 0;
+
 }
 
 .sidebar ul li {
@@ -44,7 +68,8 @@ nav ul li {
 }
 
 .sidebar ul li a {
-  text-decoration: none;
+  text-decoration: none ;
+  color: maroon;
 }
 
 .sidebar ul li:hover {
@@ -80,6 +105,17 @@ article p {
 section {
   background: rgb(239,222,157);
   margin: 0 10px;
+}
+
+.entry {
+  padding: 10px;
+  background: #fff;
+}
+
+.video_info {
+  border-left: 1px solid black;
+  height: 315px;
+  padding-left: 5px;
 }
 
 
@@ -121,6 +157,8 @@ section {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   margin-top: 10px;
+  /* background: rgb(212,228,243); */
+
 }
 
 footer {

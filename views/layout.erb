@@ -16,7 +16,7 @@
   <div id="container" class="container-fluid">
    <div class="row topnav front">
       <div>
-        <h1><a href="/">TutorialTube</a></h1>
+        <h1><a href="/">Tutorial<div class="logo">Tube</div></a></h1>
         <h2>Collecting the Best Tutorials on YouTube</h2>
           <div class="navbar navbar-inverse tutorialtube-navbar">
             <div class="navbar-inner">
@@ -35,6 +35,7 @@
       <div class='span2'>
         <!-- SIDEBAR NAVIGATION -->
           <nav class='sidebar'>
+            <strong>Categories</strong>
             <ul>
                <% @nav_rows.each do |row| %>
                 <li><a href="/videos/<%= row['genre'] %>"><%= row['genre'] %></a></li>
